@@ -221,12 +221,12 @@
 
   <div class="service-item">
     <h2>Révision et réparation complète de votre scooter</h2>
-    <img src="revision scooter.png" alt="Révision complète de scooter" />
+    <img src="revision_scooter.png" alt="Révision complète de scooter" />
   </div>
 
   <div class="service-item">
     <h2>Changement de pneus et freins</h2>
-    <img src="gonflage pneu.png" alt="Changement de pneus et freins" />
+    <img src="gonflage_pneu.png" alt="Changement de pneus et freins" />
   </div>
 
   <div class="contact-box-wrapper">
@@ -263,3 +263,4 @@
 
 </body>
 </html>
+
