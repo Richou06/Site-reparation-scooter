@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Réparation Scooter</title>
+  <style>
+    html {
+      zoom: 0.8;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      font-size: 16px;
+    }
+
+    header {
+      background-color: #000;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .logo {
+      position: absolute;
+      left: 20px;
+      height: 120px;
+      object-fit: contain;
+    }
+
+    .scooter-logos { /* MODIFIÉ : nouveau conteneur flex */
+      position: absolute;
+      right: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px; /* Espace entre les deux logos */
+      top: 30px;
+    }
+
+    .logo-second,
+    .logo-scooter {
+      height: 150px;
+      object-fit: contain;
+      top: 30px;
+    }
+    .arrow-icon {
+    font-size: 2.25rem; /* Taille de la flèche */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .title-block h1 {
+      font-size: 4rem;
+      margin-bottom: 15px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    .title-block p {
+      font-size: 1.25rem;
+      margin-top: 0;
+      margin-bottom: 30px;
+      font-weight: 500;
+    }
+
+    section {
+      padding: 20px;
+      max-width: 950px;
+      margin: auto;
+      background: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2.highlight {
+      background-color: #ffeb3b;
+      padding: 5px 10px;
+      border-radius: 4px;
+      display: inline-block;
+      color: #222;
+      margin-bottom: 5px;
+    }
+
+    .contact-box-wrapper {
+      width: 950px;
+      margin: 40px auto 30px auto;
+      border: 3px solid #155724;
+      border-radius: 6px;
+      background: none;
+      padding: 20px 30px 30px 30px;
+      box-sizing: border-box;
+    }
+
+    .contact-title {
+      font-weight: bold;
+      font-size: 1.8rem;
+      color: #155724;
+      text-align: center;
+      text-decoration: underline black;
+      margin-bottom: 40px;
+    }
+
+    .contact-box {
+      display: flex;
+      justify-content: space-between;
+      gap: 60px;
+    }
+
+    .contact-item {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      min-width: 200px;
+    }
+
+    .contact-item:nth-of-type(2) {
+      align-items: center;
+      text-align: center;
+    }
+
+    .contact-label {
+      font-weight: normal;
+      font-size: 1.15rem;
+      margin-bottom: 8px;
+      color: black;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .contact-item:nth-of-type(2) .contact-label {
+      padding-left: 15px;
+    }
+
+    .contact-link {
+      color: #155724;
+      text-decoration: none;
+      font-size: 1.4rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: color 0.3s ease;
+    }
+
+    .contact-link:hover {
+      color: #0f3d17;
+      text-decoration: underline;
+    }
+
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: 0;
+      margin-top: 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background: #222;
+      color: white;
+      margin-top: 30px;
+    }
+
+    .service-item {
+      margin-bottom: 20px;
+    }
+
+    .service-item h2 {
+      font-size: 1.6rem;
+      text-align: center;
+      margin-bottom: 5px;
+    }
+
+    .service-item:nth-of-type(2) h2 {
+      margin-top: 60px;
+    }
+
+    .service-item img {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+      margin-top: 20px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-content">
+    <img src="logo.jpg" alt="Logo de Réparation Scooter" class="logo" />
+
+    <div class="scooter-logos"> <!-- MODIFIÉ -->
+      <img src="scooter 2.png" alt="Logo complémentaire" class="logo-second" />
+       <div class="arrow-icon">➤</div>
+      <img src="scooter 3.png" alt="Illustration d’un scooter" class="logo-scooter" />
+    </div>
+
+    <div class="title-block">
+      <h1>Réparation Scooter</h1>
+      <p>Entretien, diagnostic et réparation rapide de votre scooter</p>
+    </div>
+  </div>
+</header>
+
+<section>
+  <h2 class="highlight">Nos services :</h2>
+
+  <div class="service-item">
+    <h2>Révision et réparation complète de votre scooter</h2>
+    <img src="revision scooter.png" alt="Révision complète de scooter" />
+  </div>
+
+  <div class="service-item">
+    <h2>Changement de pneus et freins</h2>
+    <img src="gonflage pneu.png" alt="Changement de pneus et freins" />
+  </div>
+
+  <div class="contact-box-wrapper">
+    <div class="contact-title">Contact :</div>
+    <div class="contact-box">
+      <div class="contact-item">
+        <div class="contact-label">Numéro de portable</div>
+        <a href="tel:+33637878188" class="contact-link">
+          📞 <span>06 37 87 81 88</span>
+        </a>
+      </div>
+      <div class="contact-item">
+        <div class="contact-label">Adresse mail</div>
+        <a href="mailto:jouberteau.sebastien@orange.fr" class="contact-link">
+          ✉️ <span>jouberteau.sebastien@orange.fr</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="highlight" style="margin-bottom: 5px;">Où nous trouver :</h2>
+  <p style="margin-top: 0; margin-bottom: 5px;"><strong>Adresse :</strong> 4 La Boulardière, 85530 La Bruffière</p>
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2713.025041565884!2d-1.1263533999999999!3d46.9922754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48069404e7e1ed75%3A0x37f061b40a0bc0ef!2s4%20La%20Boulardi%C3%A8re%2C%2085530%20La%20Bruffi%C3%A8re!5e0!3m2!1sfr!2sfr!4v1721214276036!5m2!1sfr!2sfr" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</section>
+
+<footer>
+  © 2025 Réparation Scooter - Tous droits réservés
+</footer>
+
+</body>
+</html>
